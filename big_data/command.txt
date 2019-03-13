@@ -1,0 +1,12 @@
+ hadoop fs -copyFromLocal /home/biadmin/Desktop/consumercomplaints/ProjTsv.tsv  /user/biadmin/Hconsumer
+
+
+hadoop fs -cat \Hconsumer/Consumer_Complaints.csv
+
+
+hadoop fs -cat Hconsumer/Timenocommentout18/part-r-00000
+
+
+hadoop jar MonthwiseProduct.jar com.miet.cs.MDriver  /user/biadmin/Hconsumer/ProjTsv.tsv /user/biadmin/Hconsumer/Timenocommentout18
+
+
